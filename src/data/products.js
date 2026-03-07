@@ -1,0 +1,65 @@
+export const categories = ['সবগুলো', 'চাল ও আটা', 'ডাল', 'তেল', 'মশলা', 'সবজি', 'মাছ ও মাংস'];
+
+export const productsData = [
+  // চাল ও আটা (8)
+  { id: 1, name: 'মিনিকেট চাল', category: 'চাল ও আটা', unit: '১ কেজি', price: 68, prevPrice: 68 },
+  { id: 2, name: 'নাজিরশাইল চাল', category: 'চাল ও আটা', unit: '১ কেজি', price: 75, prevPrice: 72 },
+  { id: 3, name: 'বি.আর ২৮ চাল', category: 'চাল ও আটা', unit: '১ কেজি', price: 55, prevPrice: 58 },
+  { id: 4, name: 'পোলাওয়ের চাল (চিনিগুঁড়া)', category: 'চাল ও আটা', unit: '১ কেজি', price: 135, prevPrice: 140 },
+  { id: 5, name: 'আটা (খোলা)', category: 'চাল ও আটা', unit: '১ কেজি', price: 45, prevPrice: 45 },
+  { id: 6, name: 'আটা (প্যাকেট)', category: 'চাল ও আটা', unit: '২ কেজি', price: 110, prevPrice: 115 },
+  { id: 7, name: 'ময়দা (খোলা)', category: 'চাল ও আটা', unit: '১ কেজি', price: 60, prevPrice: 60 },
+  { id: 8, name: 'সুজি', category: 'চাল ও আটা', unit: '৫০০ গ্রাম', price: 50, prevPrice: 45 },
+  
+  // ডাল (6)
+  { id: 9, name: 'মসুর ডাল (দেশি)', category: 'ডাল', unit: '১ কেজি', price: 135, prevPrice: 140 },
+  { id: 10, name: 'মসুর ডাল (মোটা)', category: 'ডাল', unit: '১ কেজি', price: 105, prevPrice: 100 },
+  { id: 11, name: 'মুগ ডাল', category: 'ডাল', unit: '১ কেজি', price: 160, prevPrice: 155 },
+  { id: 12, name: 'অ্যাংকর ডাল', category: 'ডাল', unit: '১ কেজি', price: 75, prevPrice: 75 },
+  { id: 13, name: 'ছোলা বুট', category: 'ডাল', unit: '১ কেজি', price: 100, prevPrice: 110 },
+  { id: 14, name: 'খেসারি ডাল', category: 'ডাল', unit: '১ কেজি', price: 90, prevPrice: 90 },
+
+  // তেল (6)
+  { id: 15, name: 'সয়াবিন তেল (লুজ)', category: 'তেল', unit: '১ লিটার', price: 155, prevPrice: 152 },
+  { id: 16, name: 'সয়াবিন তেল (বোতল)', category: 'তেল', unit: '১ লিটার', price: 163, prevPrice: 165 },
+  { id: 17, name: 'সয়াবিন তেল (৫ লিটার)', category: 'তেল', unit: '৫ লিটার', price: 800, prevPrice: 810 },
+  { id: 18, name: 'সরিষার তেল (লুজ)', category: 'তেল', unit: '১ লিটার', price: 220, prevPrice: 200 },
+  { id: 19, name: 'সরিষার তেল (বোতল)', category: 'তেল', unit: '১ লিটার', price: 280, prevPrice: 280 },
+  { id: 20, name: 'পাম অয়েল (লুজ)', category: 'তেল', unit: '১ লিটার', price: 135, prevPrice: 130 },
+
+  // মশলা (10)
+  { id: 21, name: 'দেশি পেঁয়াজ', category: 'মশলা', unit: '১ কেজি', price: 110, prevPrice: 120 },
+  { id: 22, name: 'আমদানি পেঁয়াজ', category: 'মশলা', unit: '১ কেজি', price: 90, prevPrice: 85 },
+  { id: 23, name: 'দেশি রসুন', category: 'মশলা', unit: '১ কেজি', price: 180, prevPrice: 180 },
+  { id: 24, name: 'আমদানি রসুন', category: 'মশলা', unit: '১ কেজি', price: 220, prevPrice: 210 },
+  { id: 25, name: 'আদা', category: 'মশলা', unit: '১ কেজি', price: 200, prevPrice: 240 },
+  { id: 26, name: 'শুকনা মরিচ', category: 'মশলা', unit: '১ কেজি', price: 380, prevPrice: 380 },
+  { id: 27, name: 'হলুদ গুঁড়া', category: 'মশলা', unit: '১০০ গ্রাম', price: 40, prevPrice: 35 },
+  { id: 28, name: 'জিরা', category: 'মশলা', unit: '১০০ গ্রাম', price: 80, prevPrice: 85 },
+  { id: 29, name: 'এলাচ', category: 'মশলা', unit: '১০০ গ্রাম', price: 350, prevPrice: 320 },
+  { id: 30, name: 'লবঙ্গ', category: 'মশলা', unit: '১০০ গ্রাম', price: 180, prevPrice: 180 },
+
+  // সবজি (12)
+  { id: 31, name: 'আলু', category: 'সবজি', unit: '১ কেজি', price: 45, prevPrice: 50 },
+  { id: 32, name: 'কাঁচা মরিচ', category: 'সবজি', unit: '১ কেজি', price: 80, prevPrice: 120 },
+  { id: 33, name: 'বেগুন', category: 'সবজি', unit: '১ কেজি', price: 60, prevPrice: 50 },
+  { id: 34, name: 'পটল', category: 'সবজি', unit: '১ কেজি', price: 55, prevPrice: 60 },
+  { id: 35, name: 'ঢেঁড়স', category: 'সবজি', unit: '১ কেজি', price: 50, prevPrice: 50 },
+  { id: 36, name: 'করলা', category: 'সবজি', unit: '১ কেজি', price: 70, prevPrice: 65 },
+  { id: 37, name: 'টমেটো', category: 'সবজি', unit: '১ কেজি', price: 40, prevPrice: 60 },
+  { id: 38, name: 'শসা', category: 'সবজি', unit: '১ কেজি', price: 35, prevPrice: 30 },
+  { id: 39, name: 'লাউ', category: 'সবজি', unit: '১ পিস', price: 60, prevPrice: 70 },
+  { id: 40, name: 'মিষ্টি কুমড়া', category: 'সবজি', unit: '১ কেজি', price: 30, prevPrice: 30 },
+  { id: 41, name: 'পেঁপে', category: 'সবজি', unit: '১ কেজি', price: 35, prevPrice: 40 },
+  { id: 42, name: 'লেবু', category: 'সবজি', unit: '৪ পিস', price: 20, prevPrice: 15 },
+
+  // মাছ ও মাংস (8)
+  { id: 43, name: 'গরুর মাংস', category: 'মাছ ও মাংস', unit: '১ কেজি', price: 750, prevPrice: 750 },
+  { id: 44, name: 'খাসির মাংস', category: 'মাছ ও মাংস', unit: '১ কেজি', price: 1100, prevPrice: 1050 },
+  { id: 45, name: 'ব্রয়লার মুরগি', category: 'মাছ ও মাংস', unit: '১ কেজি', price: 210, prevPrice: 195 },
+  { id: 46, name: 'সোনালী মুরগি', category: 'মাছ ও মাংস', unit: '১ কেজি', price: 320, prevPrice: 330 },
+  { id: 47, name: 'ডিম (ফার্ম)', category: 'মাছ ও মাংস', unit: '১ ডজন', price: 140, prevPrice: 145 },
+  { id: 48, name: 'রুই মাছ (বড়)', category: 'মাছ ও মাংস', unit: '১ কেজি', price: 400, prevPrice: 380 },
+  { id: 49, name: 'পাঙ্গাশ মাছ', category: 'মাছ ও মাংস', unit: '১ কেজি', price: 180, prevPrice: 180 },
+  { id: 50, name: 'ইলিশ (মাঝারি)', category: 'মাছ ও মাংস', unit: '১ কেজি', price: 1200, prevPrice: 1300 },
+];
