@@ -1,16 +1,16 @@
-import React from 'react'
-import MarketStats from '../layouts/MarketStats'
-import FilterControls from '../layouts/FilterControls'
-import ProductCard from '../layouts/ProductCard'
+import React from 'react';
+import CategoryFilter from '../layouts/CategoryFilter';
+import Banner from '../layouts/Banner';
+import ProductGrid from '../layouts/ProductGrid';
 
 const Home = () => {
   return (
-    <>
-    <MarketStats/>
-    <FilterControls/>
-    <ProductCard/>
-    </>
-  )
-}
+    <main className="container mx-auto px-4 md:px-8 mt-10">
+      <Banner />
+      <CategoryFilter />
+      <ProductGrid />
+    </main>
+  );
+};
 
-export default Home
+export default Home;
