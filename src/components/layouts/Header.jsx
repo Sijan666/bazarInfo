@@ -23,7 +23,6 @@ const Header = () => {
             </Link>
           </div>
         </div>
-
         <div className="hidden md:flex relative w-96 group">
           <input 
             type="text" 
@@ -34,7 +33,6 @@ const Header = () => {
           />
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 group-focus-within:text-indigo-500" />
         </div>
-
       </div>
     </header>
   );
