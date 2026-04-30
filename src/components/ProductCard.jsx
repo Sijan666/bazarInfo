@@ -2,7 +2,6 @@ import React from 'react';
 import { TrendingUp, TrendingDown, Minus } from 'lucide-react';
 
 const ProductCard = ({ product }) => {
-  
   // Price badge generator logic
   const getPriceBadge = (current, prev) => {
     const diff = current - prev;
@@ -28,7 +27,6 @@ const ProductCard = ({ product }) => {
       </div>
     );
   };
-
   return (
     <div className="bg-white rounded-2xl p-6 border border-slate-200/60 hover:border-indigo-300 hover:shadow-xl hover:shadow-indigo-100/40 transition-all duration-300 group cursor-default flex flex-col h-full">
       {/* Card Header (Category & Status) */}
@@ -38,13 +36,11 @@ const ProductCard = ({ product }) => {
         </span>
         {getPriceBadge(product.price, product.prevPrice)}
       </div>
-
       {/* Product Info */}
       <div className="grow">
         <h3 className="text-xl font-bold text-slate-900 mb-1">{product.name}</h3>
         <p className="text-sm font-medium text-slate-400 mb-6">পরিমাণ: {product.unit}</p>
       </div>
-
       {/* Price Section */}
       <div className="flex items-end justify-between mt-auto pt-5 border-t border-slate-100">
         <div>

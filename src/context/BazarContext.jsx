@@ -12,7 +12,6 @@ export const BazarProvider = ({ children }) => {
         const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase());
         return matchesCategory && matchesSearch;
     });
-
     return (
         <BazarContext.Provider value={{
         categories,
