@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCart, Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { ShoppingCart, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,7 +9,6 @@ const Footer = () => {
     <footer className="bg-white border-t border-slate-200 pt-16 pb-8 mt-auto">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          
           {/* Brand Info */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-4 inline-flex">
@@ -35,7 +34,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
           {/* Quick Links */}
           <div>
             <h3 className="font-bold text-slate-900 mb-4 uppercase tracking-wider text-sm">প্রয়োজনীয় লিংক</h3>
@@ -46,7 +44,6 @@ const Footer = () => {
               <li><Link to="/complaint" className="text-slate-500 hover:text-indigo-600 transition-colors text-sm">অভিযোগ করুন</Link></li>
             </ul>
           </div>
-
           {/* Top Categories */}
           <div>
             <h3 className="font-bold text-slate-900 mb-4 uppercase tracking-wider text-sm">জনপ্রিয় ক্যাটাগরি</h3>
@@ -57,7 +54,6 @@ const Footer = () => {
               <li><button className="text-slate-500 hover:text-indigo-600 transition-colors text-sm">তেল ও মশলা</button></li>
             </ul>
           </div>
-
           {/* Contact Info */}
           <div>
             <h3 className="font-bold text-slate-900 mb-4 uppercase tracking-wider text-sm">যোগাযোগ</h3>
@@ -76,9 +72,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
         </div>
-
         {/* Copyright Bar */}
         <div className="border-t border-slate-200 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-sm text-center md:text-left">
