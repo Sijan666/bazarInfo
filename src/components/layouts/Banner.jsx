@@ -11,7 +11,6 @@ const Banner = () => {
         <h2 className="text-3xl font-bold text-slate-900 mb-2">নিত্যপ্রয়োজনীয় বাজারদর</h2>
         <p className="text-slate-500">ভোক্তা অধিকার নিশ্চিতে বাজারের সর্বশেষ আপডেট জানুন।</p>
       </div>
-
       <div className="md:hidden relative mb-8 group">
         <input 
           type="text" 
