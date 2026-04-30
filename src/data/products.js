@@ -21,8 +21,6 @@ export const productsData = [
   { id: 18, name: 'সরিষার তেল (লুজ)', category: 'তেল', unit: '১ লিটার', price: 220, prevPrice: 200 },
   { id: 19, name: 'সরিষার তেল (বোতল)', category: 'তেল', unit: '১ লিটার', price: 280, prevPrice: 280 },
   { id: 20, name: 'পাম অয়েল (লুজ)', category: 'তেল', unit: '১ লিটার', price: 135, prevPrice: 130 },
-
-  // মশলা (10)
   { id: 21, name: 'দেশি পেঁয়াজ', category: 'মশলা', unit: '১ কেজি', price: 110, prevPrice: 120 },
   { id: 22, name: 'আমদানি পেঁয়াজ', category: 'মশলা', unit: '১ কেজি', price: 90, prevPrice: 85 },
   { id: 23, name: 'দেশি রসুন', category: 'মশলা', unit: '১ কেজি', price: 180, prevPrice: 180 },
@@ -33,8 +31,6 @@ export const productsData = [
   { id: 28, name: 'জিরা', category: 'মশলা', unit: '১০০ গ্রাম', price: 80, prevPrice: 85 },
   { id: 29, name: 'এলাচ', category: 'মশলা', unit: '১০০ গ্রাম', price: 350, prevPrice: 320 },
   { id: 30, name: 'লবঙ্গ', category: 'মশলা', unit: '১০০ গ্রাম', price: 180, prevPrice: 180 },
-
-  // সবজি (12)
   { id: 31, name: 'আলু', category: 'সবজি', unit: '১ কেজি', price: 45, prevPrice: 50 },
   { id: 32, name: 'কাঁচা মরিচ', category: 'সবজি', unit: '১ কেজি', price: 80, prevPrice: 120 },
   { id: 33, name: 'বেগুন', category: 'সবজি', unit: '১ কেজি', price: 60, prevPrice: 50 },
@@ -47,8 +43,6 @@ export const productsData = [
   { id: 40, name: 'মিষ্টি কুমড়া', category: 'সবজি', unit: '১ কেজি', price: 30, prevPrice: 30 },
   { id: 41, name: 'পেঁপে', category: 'সবজি', unit: '১ কেজি', price: 35, prevPrice: 40 },
   { id: 42, name: 'লেবু', category: 'সবজি', unit: '৪ পিস', price: 20, prevPrice: 15 },
-
-  // মাছ ও মাংস (8)
   { id: 43, name: 'গরুর মাংস', category: 'মাছ ও মাংস', unit: '১ কেজি', price: 750, prevPrice: 750 },
   { id: 44, name: 'খাসির মাংস', category: 'মাছ ও মাংস', unit: '১ কেজি', price: 1100, prevPrice: 1050 },
   { id: 45, name: 'ব্রয়লার মুরগি', category: 'মাছ ও মাংস', unit: '১ কেজি', price: 210, prevPrice: 195 },
