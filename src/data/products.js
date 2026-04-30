@@ -1,7 +1,6 @@
 export const categories = ['সবগুলো', 'চাল ও আটা', 'ডাল', 'তেল', 'মশলা', 'সবজি', 'মাছ ও মাংস'];
 
 export const productsData = [
-  // চাল ও আটা (8)
   { id: 1, name: 'মিনিকেট চাল', category: 'চাল ও আটা', unit: '১ কেজি', price: 68, prevPrice: 68 },
   { id: 2, name: 'নাজিরশাইল চাল', category: 'চাল ও আটা', unit: '১ কেজি', price: 75, prevPrice: 72 },
   { id: 3, name: 'বি.আর ২৮ চাল', category: 'চাল ও আটা', unit: '১ কেজি', price: 55, prevPrice: 58 },
@@ -10,16 +9,12 @@ export const productsData = [
   { id: 6, name: 'আটা (প্যাকেট)', category: 'চাল ও আটা', unit: '২ কেজি', price: 110, prevPrice: 115 },
   { id: 7, name: 'ময়দা (খোলা)', category: 'চাল ও আটা', unit: '১ কেজি', price: 60, prevPrice: 60 },
   { id: 8, name: 'সুজি', category: 'চাল ও আটা', unit: '৫০০ গ্রাম', price: 50, prevPrice: 45 },
-  
-  // ডাল (6)
   { id: 9, name: 'মসুর ডাল (দেশি)', category: 'ডাল', unit: '১ কেজি', price: 135, prevPrice: 140 },
   { id: 10, name: 'মসুর ডাল (মোটা)', category: 'ডাল', unit: '১ কেজি', price: 105, prevPrice: 100 },
   { id: 11, name: 'মুগ ডাল', category: 'ডাল', unit: '১ কেজি', price: 160, prevPrice: 155 },
   { id: 12, name: 'অ্যাংকর ডাল', category: 'ডাল', unit: '১ কেজি', price: 75, prevPrice: 75 },
   { id: 13, name: 'ছোলা বুট', category: 'ডাল', unit: '১ কেজি', price: 100, prevPrice: 110 },
   { id: 14, name: 'খেসারি ডাল', category: 'ডাল', unit: '১ কেজি', price: 90, prevPrice: 90 },
-
-  // তেল (6)
   { id: 15, name: 'সয়াবিন তেল (লুজ)', category: 'তেল', unit: '১ লিটার', price: 155, prevPrice: 152 },
   { id: 16, name: 'সয়াবিন তেল (বোতল)', category: 'তেল', unit: '১ লিটার', price: 163, prevPrice: 165 },
   { id: 17, name: 'সয়াবিন তেল (৫ লিটার)', category: 'তেল', unit: '৫ লিটার', price: 800, prevPrice: 810 },
