@@ -6,7 +6,7 @@ const CategoryFilter = () => {
 
   return (
     <div className="flex items-center gap-3 mb-10 overflow-x-auto pb-4 scrollbar-hide">
-      {categories.map((category) => (
+      {categories?.map((category) => (
         <button
           key={category}
           onClick={() => setActiveCategory(category)}
