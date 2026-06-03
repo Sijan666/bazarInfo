@@ -73,7 +73,7 @@ const Footer = () => {
                 placeholder="আপনার ইমেইল..." 
                 className="w-full bg-slate-800 border border-slate-700 text-slate-200 px-4 py-2.5 rounded-lg focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-sm"
               />
-              <button className="absolute right-1 top-1 bottom-1 bg-indigo-500 hover:bg-indigo-600 text-white px-4 rounded-md transition-colors flex items-center justify-center">
+              <button className="cursor-pointer absolute right-1 top-1 bottom-1 bg-indigo-500 hover:bg-indigo-600 text-white px-4 rounded-md transition-colors flex items-center justify-center">
                 <Send className="w-4 h-4" />
               </button>
             </div>
