@@ -68,7 +68,6 @@ const ProductGrid = () => {
                     <ProductCard key={product.id} product={product} />
                 ))}
             </div>
-
             {totalPages > 1 && (
                 <div className="flex flex-wrap items-center justify-center gap-2 mb-10 px-2">
                     {/* prev */}
@@ -79,8 +78,7 @@ const ProductGrid = () => {
                             currentPage === 1 
                                 ? 'border-slate-200 text-slate-300 cursor-not-allowed' 
                                 : 'border-slate-300 text-slate-700 hover:bg-slate-50'
-                        }`}
-                    >
+                        }`}>
                         <ChevronLeft className="w-4 h-4 md:w-5 md:h-5" />
                     </button>
                     <div className="flex flex-wrap items-center justify-center gap-1 md:gap-1.5">
@@ -119,7 +117,6 @@ const ProductGrid = () => {
                         }`}>
                         <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
                     </button>
-
                 </div>
             )}
         </div>
