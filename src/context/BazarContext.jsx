@@ -1,25 +1,32 @@
 import React, { createContext, useState } from 'react';
 import { productsData, categories } from '../data/products';
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const BazarContext = createContext();
 
 export const BazarProvider = ({ children }) => {
     const [activeCategory, setActiveCategory] = useState('সবগুলো');
     const [searchQuery, setSearchQuery] = useState('');
 
-    const filteredProducts = productsData.filter(product => {
-        const matchesCategory = activeCategory === 'সবগুলো' || product.category === activeCategory;
-        const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase());
+    const filteredProducts = productsData?.filter(product => {
+        const matchesCategory = activeCategory === 'সবগুলো' || product?.category === activeCategory;
+
+        const productName = product?.name || ''; 
+        const matchesSearch = productName.toLowerCase().includes(searchQuery.toLowerCase());
+        
         return matchesCategory && matchesSearch;
-    });
+    }) || [];
+
     return (
         <BazarContext.Provider value={{
-        categories,
-        activeCategory, setActiveCategory,
-        searchQuery, setSearchQuery,
-        filteredProducts
+            categories,
+            activeCategory, 
+            setActiveCategory,
+            searchQuery, 
+            setSearchQuery,
+            filteredProducts
         }}>
-        {children}
+            {children}
         </BazarContext.Provider>
     );
 };
