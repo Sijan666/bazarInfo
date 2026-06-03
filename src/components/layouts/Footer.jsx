@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingCart, Mail, Phone, MapPin } from 'lucide-react';
+import { FaFacebook } from 'react-icons/fa';
+import { BsInstagram, BsTwitter } from 'react-icons/bs';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,8 +13,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand Info */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-3 mb-4 inline-flex">
-              <div className="bg-gradient-to-br from-indigo-600 to-blue-500 p-2 rounded-lg shadow-md shadow-indigo-200">
+            <Link to="/" className="items-center gap-3 mb-4 inline-flex">
+              <div className="bg-linear-to-br from-indigo-600 to-blue-500 p-2 rounded-lg shadow-md shadow-indigo-200">
                 <ShoppingCart className="w-5 h-5 text-white" />
               </div>
               <h2 className="text-xl font-extrabold text-slate-900 tracking-tight">
@@ -24,13 +26,13 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-3">
               <a href="#" className="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-indigo-50 hover:text-indigo-600 transition-colors">
-                <Facebook className="w-4 h-4" />
+                <FaFacebook className="w-4 h-4" />
               </a>
               <a href="#" className="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-indigo-50 hover:text-indigo-600 transition-colors">
-                <Twitter className="w-4 h-4" />
+                <BsTwitter className="w-4 h-4" />
               </a>
               <a href="#" className="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-indigo-50 hover:text-indigo-600 transition-colors">
-                <Instagram className="w-4 h-4" />
+                <BsInstagram className="w-4 h-4" />
               </a>
             </div>
           </div>
