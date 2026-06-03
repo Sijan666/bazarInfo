@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'; // useEffect রিমুভ করা হয়েছে
+import React, { useContext, useState } from 'react';
 import { Search, ChevronLeft, ChevronRight } from 'lucide-react';
 import ProductCard from '../ui/ProductCard'; 
 import { BazarContext } from '../../context/BazarContext';
