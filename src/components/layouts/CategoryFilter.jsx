@@ -33,13 +33,11 @@ const CategoryFilter = () => {
       <div className="flex items-start gap-4 md:gap-8 overflow-x-auto pb-6 pt-4 px-2 scrollbar-hide snap-x snap-mandatory">
         {categories?.map((category) => {
           const isActive = activeCategory === category;
-
           return (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className="snap-center group flex flex-col items-center gap-3 min-w-[72px] outline-none"
-            >
+              className="snap-center group flex flex-col items-center gap-3 min-w-[72px] outline-none cursor-pointer">
               {/* Circular Icon Box */}
               <div 
                 className={`w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-all duration-300 ${
