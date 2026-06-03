@@ -1,10 +1,33 @@
-import React, { useContext } from 'react';
-import { Search, CalendarDays, ShoppingCart } from 'lucide-react';
+import React, { useContext, useState, useEffect } from 'react';
+import { Search, CalendarDays, ShoppingCart, Clock } from 'lucide-react';
 import { BazarContext } from '../../context/BazarContext';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
   const { searchQuery, setSearchQuery } = useContext(BazarContext);
+  
+  const [currentDateTime, setCurrentDateTime] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentDateTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const formattedDate = currentDateTime.toLocaleDateString('bn-BD', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  });
+
+  const formattedTime = currentDateTime.toLocaleTimeString('bn-BD', {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: true
+  });
 
   return (
     <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
@@ -15,12 +38,22 @@ const Header = () => {
           </div>
           <div>
             <Link to={'/'}>
-            <h1 className="text-xl font-extrabold text-slate-900 tracking-tight">বাজার<span className="text-indigo-600">ইনফো</span></h1>
-            <div className="flex items-center gap-1.5 text-xs font-medium text-slate-500 mt-0.5">
-              <CalendarDays className="w-3.5 h-3.5" />
-              <span>আজকের আপডেট</span>
-            </div>
+              <h1 className="text-xl font-extrabold text-slate-900 tracking-tight">
+                বাজার<span className="text-indigo-600">ইনফো</span>
+              </h1>
             </Link>
+            {/* Date and Time Section */}
+            <div className="flex items-center gap-2 text-xs font-medium text-slate-500 mt-0.5">
+              <div className="flex items-center gap-1">
+                <CalendarDays className="w-3.5 h-3.5" />
+                <span>{formattedDate}</span>
+              </div>
+              <span className="text-slate-300">|</span>
+              <div className="flex items-center gap-1">
+                <Clock className="w-3.5 h-3.5" />
+                <span>{formattedTime}</span>
+              </div>
+            </div>
           </div>
         </div>
         <div className="hidden md:flex relative w-96 group">
